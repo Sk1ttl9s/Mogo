@@ -72,8 +72,6 @@ h1, h2, h3, h4, h5, h6{
     font-size: 72px;
     color:#fff;
     font-family:'Kaushan Script', cursive;
-
-
 }
 
 
@@ -120,7 +118,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 
-/* полоска */
+/* Псевдоэлемент */
 .nav-link::after{
     content: "";
     display: block;
@@ -148,6 +146,7 @@ h1, h2, h3, h4, h5, h6{
     opacity: 1;
 }
 
+/* Активный элемент */
 .nav-link.active{
     color: #fce38a;
 }
@@ -174,12 +173,14 @@ h1, h2, h3, h4, h5, h6{
 .btn:hover{
     background-color: #fff;
     color: #fce38a;
-}
+} 
 
 /* Slider */
 .slider{
     width: 100%;
     position: absolute;
+    padding-left: 32px;
+    padding-right: 32px;
     bottom: 0;
     left: 0;
     z-index: 1;
@@ -191,7 +192,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .slider-item{
-    width: 23%;
+    width: 20%;
     padding: 20px 0;
     position: relative;
 
@@ -208,6 +209,7 @@ h1, h2, h3, h4, h5, h6{
     opacity: 1;
 }
 
+/* Псевдоэлемент */
 .slider-item.active:before{
     content: "";
     display: block;
@@ -225,4 +227,46 @@ h1, h2, h3, h4, h5, h6{
 
 .slider-number{
     font-size: 24px;
+}
+
+
+/* Section */
+.section{
+    padding: 80px 0;
+}
+
+.section-header{
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 40;
+    
+    text-align: center;
+}
+
+.section-suptitle{
+    font-size: 24px;
+    color: #333;
+    font-family:'Kaushan Script', cursive;
+}
+
+.section-title{
+    font-size: 30px;
+    color: #333;
+    font-weight: 700px;
+    text-transform: uppercase;
+}
+
+.section-title:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 30px auto; 
+
+    background-color: #f38181;
+}
+
+.section-text{
+    color: #999;
+    font-size: 15px;
 }
